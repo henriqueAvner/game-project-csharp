@@ -125,21 +125,28 @@ public class TrybeGamesController
     {
         var newId = 0;
         var newPlayer = Console.ReadLine();
-        var curr_player = new Player();
+        var currPlayer = new Player();
         newId++;
 
-        curr_player.Name = newPlayer;
-        curr_player.Id = newId;
+        currPlayer.Name = newPlayer;
+        currPlayer.Id = newId;
 
-        database.Players.Add(curr_player);
+        database.Players.Add(currPlayer);
 
     }
 
     // 2. Crie a funcionalidade de adicionar um novo estúdio de jogos ao banco de dados
     public void AddGameStudio()
     {
-        // implementar
-        Console.WriteLine("Ainda não é possível realizar essa funcionalidade!");
+        var gameId = 0;
+        var newStudio = Console.ReadLine();
+        var currStudio = new GameStudio();
+        gameId++;
+
+        currStudio.Id = gameId;
+        currStudio.Name = newStudio;
+
+        database.GameStudios.Add(currStudio);
     }
 
     // 3. Crie a funcionalidade de adicionar novo Jogo ao Banco de dados
