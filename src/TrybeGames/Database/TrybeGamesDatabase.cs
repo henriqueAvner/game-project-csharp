@@ -33,8 +33,12 @@ public class TrybeGamesDatabase
     public List<Game> GetGamesOwnedBy(Player playerEntry)
     {
 
-        var GamesOwnedBy = Games.Where(g => playerEntry.GamesOwned.Contains(g.Id));
+        // var GamesOwnedBy = Games.Where(g => playerEntry.GamesOwned.Contains(g.Id));
 
+        var GamesOwnedBy = from game in Games
+                           from gameOwned in playerEntry.GamesOwned
+                           where game.Id == gameOwned
+                           select game;
 
         return GamesOwnedBy.ToList();
 
