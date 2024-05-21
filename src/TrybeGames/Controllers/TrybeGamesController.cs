@@ -155,8 +155,7 @@ public class TrybeGamesController
         var gameId = 0;
         var NewGame = Console.ReadLine();
         DateTime gameDate = DateTime.Parse(Console.ReadLine());
-        GameType typeGame;
-        Enum.TryParse(Console.ReadLine(), out typeGame);
+        Enum.TryParse(Console.ReadLine(), out GameType typeGame);
         var currGame = new Game();
         gameId++;
 
