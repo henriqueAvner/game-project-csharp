@@ -195,6 +195,6 @@ _Implementado o método `TestGetGamesPlayedBy()` no arquivo `src/TrybeGames.Test
 
 ## :warning: Atenção :warning:
 
-### Todos os arquivos desenvolvidos estão presentes na árvore descrita. Todos os outros foram desenvolvidos pela Trybe! :white_check_mark:
+### Todos os arquivos desenvolvidos estão presentes nos requisitos. Todos os outros foram desenvolvidos pela Trybe! :white_check_mark:
 
 
